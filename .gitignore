@@ -1,0 +1,5 @@
+*.zip
+slick-1.8.1
+svg/*.svg
+!svg/sprite.svg
+node_modules

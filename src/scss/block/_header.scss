@@ -1,0 +1,21 @@
+.header {
+    position: absolute;
+    width: 100%;
+    padding: 34px 0 0;
+    z-index: 100;
+
+    &__wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    &__sub-logo {
+        width: 45px;
+    }
+
+
+    &__logo {
+        display: none;
+    }
+}

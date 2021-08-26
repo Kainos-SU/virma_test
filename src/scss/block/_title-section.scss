@@ -1,0 +1,94 @@
+.title-section {
+    width: 100%;
+    position: relative;
+
+    &__nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+    }
+
+    &__nav-wrapper {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__select {
+        background: transparent;
+        margin-left: auto;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        font-family: "Cera Pro", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        transition: border-color 0.25s;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            border-radius: 0;
+            border-bottom-color: orange;
+        }
+
+        &:disabled {
+            cursor: auto;
+            opacity: 0.45;
+            pointer-events: none;
+        }
+
+        &:focus,
+        &:focus-visible {
+            border-color: orange; 
+        }
+    }
+}
+
+.title-slider {
+    &__slide {
+        padding: (34px + 14px) 0 0;
+        position: relative;
+        width: 100%;
+        min-height: 457px;
+    }
+
+    &__picture {
+        display: block;
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+
+        & img {
+            height: 100%;
+            width: 100%;
+            object-position: center;
+            object-fit: cover;
+        }
+    }
+
+    &__left-field {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 165 / 360 * 100%;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(40px);
+    }
+
+    &__right-field {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 70 / 360 * 100%;
+        background-color: #fff;
+    }
+
+}

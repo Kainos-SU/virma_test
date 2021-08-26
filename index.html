@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Virma</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <svg class="header__virna" width="120" height="16" viewBox="0 0 120 16">
+                        <use href="./svg/sprite.svg#logo"></use>
+                    </svg>
+                </div>
+                <div class="header__sub-logo">
+                    <svg class="header__bonum" width="45" height="14" viewBox="0 0 45 14">
+                        <use href="./svg/sprite.svg#bonum"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__hero title-section">
+            <div class="title-section__slider title-slider">
+                <div class="title-slider__slide">
+                    <picture class="title-slider__picture">
+                        <source media="(max-resolution: 1dppx)"
+                            srcset="./img/hero_background/hero.jpg">
+                        <source media="(max-resolution: 2dppx)"
+                            srcset="./img/hero_background/hero@2x.jpg">
+                        <source media="(max-resolution: 3dppx)"
+                            srcset="./img/hero_background/hero@3x.jpg">
+                        <img src="./img/hero_background/hero.jpg" alt="Model">
+                    </picture>
+                    <div class="title-slider__left-field"></div>
+                    <div class="title-slider__right-field"></div>
+                    <div class="title-slider__content">
+                        <div class="container">
+                            <div class="title-slider__content-wrapper">
+                                <div class="title-slider__left-content">
+                                    <h2 class="title-slider__title">Ukrainian brand</h2>
+                                    <h3 class="title-slider__subtitle">of women’s clothing</h3>
+                                </div>
+                                <div class="title-slider__right-content">
+                                    <h4 class="title-slider__desc">
+                                        <span class="title-slider__text">Online store</span>
+                                        <span class="title-slider__number">2020</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="title-section__nav">
+                <div class="container">
+                    <div class="title-section__nav-wrapper">
+                        <ul class="title-section__list">
+                            <li class="title-section-item">
+                                <a href="#" class="title-section">
+                                    <span class="bars">
+                                        <span class="bar"></span>
+                                        <span class="bar"></span>
+                                        <span class="bar"></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="title-section-item">
+                                <a href="#" class="title-section__anchor">
+                                    <svg class="title-section__icon" width="20" height="20" viewBox="0 0 20 20">
+                                        <use href="./svg/sprite.svg#like"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="title-section__list-item">
+                                <a href="#" class="title-section__anchor">
+                                    <svg class="title-section__icon" width="20" height="20" viewBox="0 0 20 20">
+                                        <use href="./svg/sprite.svg#camera"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="title-section__list-item">
+                                <a href="#" class="title-section__anchor">
+                                    <svg class="title-section__icon" width="20" height="20" viewBox="0 0 20 20">
+                                        <use href="./svg/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <select name="language" class="title-section__select">
+                            <option value="ru_RU" checked>ru</option>
+                            <option value="uk_UA">ua</option>
+                            <option value="en_US">en</option>
+                        </select>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.header {
+    @media screen and (min-width: 540px) {
+        &__logo {
+            display: block;
+        }
+
+
+        &__wrapper {
+            justify-content: space-between;
+        }
+    }
+}
