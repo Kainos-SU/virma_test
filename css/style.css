@@ -418,6 +418,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 457px;
+  display: flex;
 }
 .title-slider__picture {
   display: block;
@@ -447,6 +448,19 @@ body {
   right: 0;
   width: 19.4444444444%;
   background-color: #fff;
+}
+.title-slider__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.title-slider__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.title-slider__desc {
+  writing-mode: tb;
+  writing-mode: vertical-lr;
 }
 
 @media screen and (min-width: 540px) {
