@@ -16,7 +16,7 @@
         transform: rotate(90deg);
         margin: auto;
         position: absolute;
-        inset: 0;
+        inset: 0 0 0 -15%;
         color: rgba(#D7969E, 0.85);
         backdrop-filter: blur(40px);
     }
@@ -28,13 +28,13 @@
 
     &__virna-logo {
         position: relative;
-        width: 125 / 330 * 100%;
+        width: 34%;
 
         &::before {
             display: block;
             content: '';
             width: 100%;
-            padding-top: 100%;
+            padding-top: 150%;
         }
 
         &::after {
@@ -54,19 +54,21 @@
         flex: 1 1 auto;
         position: relative;
     }
-
+    
     &__thank {
         font-size: 42 / 16 * 1rem;
         font-weight: 700;
+        letter-spacing: 1px;
     }
 
     &__watch {
         font-size: 13px;
         font-weight: 500;
         position: absolute;
-        transform-origin: bottom left;
-        transform: rotate(-90deg);
+        transform-origin: top left;
+        transform: rotate(-90deg) translateX(-100%);
         top: 90px;
         left: 0;
+        letter-spacing: 0.5px;
     }
 }

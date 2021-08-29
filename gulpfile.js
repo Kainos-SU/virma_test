@@ -73,7 +73,7 @@ function buildJS(cb) {
     console.log("JS");
     const jsPath = `src${path.sep}js${path.sep}`;
     const jsDest = `.${path.sep}js`;
-    clearDir(jsDest);
+    fs.rmSync(jsDest + path.sep + "index.js", {force:true});
     if (!fs.existsSync(jsPath)) {
         console.log("There is no JS sources");
         return cb();

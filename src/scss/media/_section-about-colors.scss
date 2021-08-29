@@ -56,6 +56,14 @@
         &__desc {
             font-size: 14px;
         }
+
+        &__wrapper {
+            justify-content: flex-end;
+        }
+
+        &__dark {
+            margin-right: 684 / 1171 * 100%;
+        }
     }
 
 }
@@ -66,6 +74,10 @@
 
         &__title {
             padding-left: 123px;
+        }
+
+        &__dark {
+            margin-right: 816 / 1410 * 100%;
         }
     }
 }

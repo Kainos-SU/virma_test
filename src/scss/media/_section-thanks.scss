@@ -1,15 +1,99 @@
 @media screen and (min-width: 540px) {
+ .section-thanks {
+     &__virna-logo {
+        width: 51.878788%;
 
+        &::before {
+            padding-top: 57%;
+        }
+     }
+
+     &__virna {
+        width: 260px;
+        height: 30px;
+        left: 20%;
+     }
+ }
 }
 
 @media screen and (min-width: 900px) {
 
+    .section-thanks {
+        &__watch {
+            top: 128px;
+        }
+
+        &__virna-logo::before {
+            padding-top: 73%;
+        }
+
+        &__virna {
+            width: 289px;
+            height: 37px;
+            left: 114px;
+        }
+
+        &__thank {
+            margin-top: 40px;
+        }
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
+    .section-thanks {
 
+        &__virna-logo {
+            width: 51%;
+
+            &::after {
+                width: 328px;
+                height: 328px;
+                filter: blur(400px);
+            }
+        }
+
+
+        &__virna {
+            width: 577px;
+            height: 72px;
+            left: 42px;
+            bottom: 60px;
+        }
+
+        &__thank {
+            margin-top: 56px;
+        }
+
+        &__watch {
+            top: 170px;
+            letter-spacing: 1px;
+        }
+    }
 }
 
 @media screen and (min-width: 1600px) {
+    .section-thanks {
+        &__virna {
+            width: 633px;
+            height: 80px;
+            left: 69px;
+            bottom: 0px;
+        }
 
+        &__virna-logo {
+            &::after {
+                width: 411px;
+                height: 411px;
+            }
+        }
+
+        &__thank {
+            margin-top: 170px;
+        }
+
+        &__watch {
+            top: 285px;
+        }
+    }
 }
