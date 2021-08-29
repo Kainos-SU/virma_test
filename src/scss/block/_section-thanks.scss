@@ -1,0 +1,72 @@
+.section-thanks {
+    padding: 55px 0 122px;
+
+    &__logo {
+        margin-bottom: 50px;
+    }
+
+    &__bonum {
+        height: 20px;
+        width: 65px;
+    }
+
+    &__virna {
+        width: 132px;
+        height: 17px;
+        transform: rotate(90deg);
+        margin: auto;
+        position: absolute;
+        inset: 0;
+        color: rgba(#D7969E, 0.85);
+        backdrop-filter: blur(40px);
+    }
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+    }
+
+    &__virna-logo {
+        position: relative;
+        width: 125 / 330 * 100%;
+
+        &::before {
+            display: block;
+            content: '';
+            width: 100%;
+            padding-top: 100%;
+        }
+
+        &::after {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 127px;
+            height: 127px;
+            margin: auto;
+            inset: 0;
+            background: #D7969E;
+            filter: blur(150px);
+        }
+    }
+
+    &__text {
+        flex: 1 1 auto;
+        position: relative;
+    }
+
+    &__thank {
+        font-size: 42 / 16 * 1rem;
+        font-weight: 700;
+    }
+
+    &__watch {
+        font-size: 13px;
+        font-weight: 500;
+        position: absolute;
+        transform-origin: bottom left;
+        transform: rotate(-90deg);
+        top: 90px;
+        left: 0;
+    }
+}

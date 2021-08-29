@@ -1,0 +1,31 @@
+.section-about-colors {
+    padding: 50px 0 0;
+
+    &__title {
+        font-weight: 500;
+        font-size: 22 / 16 * 1rem;
+        line-height: 27.65px;
+        margin-bottom: 30px;
+    }
+
+    &__desc {
+        padding: 0 30px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        margin-bottom: 47px;
+        line-height: 15.89px;
+    }
+
+    &__dark {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 12 / 16 * 100%;
+        margin-bottom: 2em;
+    }
+    
+    &__even-darker {
+        display: inline-block;
+        transform-origin: top right;
+        transform: translateX(-100%) rotate(-90deg);
+    }
+}

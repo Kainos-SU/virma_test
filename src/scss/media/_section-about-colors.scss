@@ -1,0 +1,71 @@
+@media screen and (min-width: 540px) {
+    .section-about-colors {
+        &__title {
+            padding-left: 100px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        &__desc {
+            flex: 0 0 (268 / 690 * 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        &__dark {
+            margin: 0;
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .section-about-colors {
+        padding: 70px 0 0;
+
+        &__title {
+            margin-bottom: 60px;
+            font-size: 24px;
+            padding-left: 106px;
+        }
+
+        &__desc {
+            font-size: 13px;
+            max-width: 290px;
+            line-height: 132.4%;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .section-about-colors {
+        padding: 80px 0 0;
+
+        &__title {
+            font-size: 30px;
+            padding-left: 125px;
+        }
+        
+        &__desc {
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+    .section-about-colors {
+        padding: 100px 0 0;
+
+        &__title {
+            padding-left: 123px;
+        }
+    }
+}

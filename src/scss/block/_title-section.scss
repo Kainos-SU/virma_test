@@ -8,7 +8,109 @@
         right: 0;
         bottom: 30px;
     }
+}
 
+.title-slider {
+    &__slide {
+        position: relative;
+        width: 100%;
+        min-height: 457px;
+        display: flex;
+    }
+
+    &__picture {
+        display: block;
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+
+        & img {
+            height: 100%;
+            width: 100%;
+            object-position: 55% center;
+            object-fit: cover;
+        }
+    }
+
+    &__left-field {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 165 / 360 * 100%;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(40px);
+    }
+
+    &__right-field {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 70 / 360 * 100%;
+        background-color: #fff;
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+    }
+
+    &__content-wrapper {
+       height: 100%;
+       display: flex;
+    }
+
+    &__left-content {
+        display: none;
+        width: 300 / 690 * 100%;
+        margin-top: 106px;
+        font-size: 0;
+        // display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 42 / 16 * 1rem;
+        margin-bottom: 30px;
+        white-space: pre-line;
+        letter-spacing: 1px;
+    }
+
+    &__subtitle {
+        font-size: 0.8125rem;
+        flex: 1 1 auto;
+        text-align: right;
+        padding-left: 60px;
+        transform-origin: top right;
+        transform: translateX(-100%) rotate(-90deg);
+        white-space: pre-line;
+    }
+
+    &__right-content {
+        margin: auto 0 auto auto;
+    }
+
+
+    &__desc {
+        writing-mode: tb;
+        writing-mode: vertical-lr;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    &__number {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+}
+
+.nav {
     &__nav-wrapper {
         display: flex;
         width: 100%;
@@ -18,6 +120,49 @@
 
     &__list {
         display: flex;
+        flex: 1 1 auto;
+        max-width: 144px;
+    }
+
+    &__item {
+        margin-right: 15 / 140 * 100%;
+        width: 20px;
+        
+        
+        &:first-child {
+            margin-right: 28px;
+        }
+    }
+
+    &__anchor {
+        color: black;
+        transition: color 0.25s;
+        position: relative;
+        outline: none;
+
+        &::after {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -2.5%;
+            height: 2px;
+            transform-origin: center;
+            background-color: orange;
+            transform: scaleX(0);
+            transition: transform 0.25s;
+        }
+
+
+        &:hover {
+            color: red;
+        }
+
+        &:focus::after,
+        &:focus-visible::after {
+            transform: scaleX(1);
+        }
     }
 
     &__select {
@@ -48,64 +193,4 @@
             border-color: orange; 
         }
     }
-}
-
-.title-slider {
-    &__slide {
-        padding: (34px + 14px) 0 0;
-        position: relative;
-        width: 100%;
-        min-height: 457px;
-        display: flex;
-    }
-
-    &__picture {
-        display: block;
-        position: absolute;
-        inset: 0;
-        overflow: hidden;
-
-        & img {
-            height: 100%;
-            width: 100%;
-            object-position: center;
-            object-fit: cover;
-        }
-    }
-
-    &__left-field {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 165 / 360 * 100%;
-        background: rgba(255, 255, 255, 0.85);
-        backdrop-filter: blur(40px);
-    }
-
-    &__right-field {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        width: 70 / 360 * 100%;
-        background-color: #fff;
-    }
-
-    &__content {
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    &__content-wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__desc {
-        writing-mode: tb;
-        writing-mode: vertical-lr;
-    }
-
 }

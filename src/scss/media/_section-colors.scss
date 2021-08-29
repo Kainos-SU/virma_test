@@ -1,0 +1,131 @@
+@media screen and (min-width: 540px) {
+
+    .section-color {
+        &__text {
+            max-width: 360px;
+            width: 350 / 690 * 100%;
+            padding: 0 0px 0 5px;
+            min-height: 279px;
+        }
+
+        &__color:first-child {
+            position: absolute;
+            top: -210%;
+            right: 0;
+        }
+
+        &__color:first-child+&__color {
+            position: absolute;
+            top: -65%;
+            right: 0;
+            min-width: 270px;
+            max-width: 450px;
+            margin-right: 60px;
+        }
+
+        &__color:last-child {
+            margin-left: 50px;
+        }
+
+        &__absolute-sublist {
+            width: 100%;
+        }
+
+        &__bright {
+            font-size: 14px;
+        }
+    }
+
+    .color-groop {
+
+        &--backward &__item:first-child {
+            order: 3;
+            margin: 0;
+        }
+    
+    
+        &--backward &__item:first-child+&__item {
+            order: 0;
+            margin: 0 60% 0 0;
+        }
+
+        &--backward &__item:last-child {
+            margin: 0 30px 0 auto;
+        }
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .section-color {
+    
+        &__color:first-child {
+            position: absolute;
+            top: -195%;
+            right: 0;
+        }
+
+        &__color:not(:first-child) {
+            width: 43%;
+            max-width: 450px;
+        }
+
+        &__color:first-child+&__color {
+            position: absolute;
+            top: -64%;
+            right: 0;
+            margin-right: 40px;
+        }
+    }
+
+    .color-groop {
+        max-width: none;
+        width: 100%;
+    }
+
+
+    .color-block {
+        --height-big: 51px;
+
+        &--big {
+
+            &::before {
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .color-block {
+        --height-big: 70px;
+        --height: 60px;
+
+        width: 130 / 450 * 100%;
+
+        &--big {
+            max-width: 280px;
+        }
+    }
+
+    .section-color {
+        &__title {
+            font-size: 56px;
+            line-height: 70.5px;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .section-color {
+       &__color:first-child+&__color {
+           margin-right: 121px;
+       }
+
+       &__color:last-child {
+           margin-left: 120px;
+       }
+    }
+}

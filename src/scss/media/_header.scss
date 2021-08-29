@@ -10,3 +10,27 @@
         }
     }
 }
+
+@media screen and (min-width: 900px) {
+    .header {
+        &__bonum {
+            width: 60px;
+            height: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        &__bonum {
+            height: 20px;
+            width: 65px;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .header {
+        padding: 50px 0 0;
+    }
+}
